@@ -6,7 +6,7 @@ export default function Homepage() {
       <div className="homepage">
         <h1>Safe Share</h1>
         <p>
-          introducing the file sharing platform.
+          Introducing the file sharing platform.
           <br />A convinient way to share files
           <br />
           in seconds.
@@ -19,7 +19,6 @@ export default function Homepage() {
           Receive
         </button>
       </div>
-      <div className="ellipse"></div>
     </>
   );
 }
