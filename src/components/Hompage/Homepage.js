@@ -4,7 +4,7 @@ export default function Homepage() {
   return (
     <>
       <div className="homepage">
-        <h1>Safe hare</h1>
+        <h1>Safe Share</h1>
         <p>
           Introducing the file sharing platform.
           <br />A convinient way to share files
