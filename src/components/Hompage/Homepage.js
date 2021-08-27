@@ -1,6 +1,9 @@
 import "./Homepage.css";
 
 export default function Homepage() {
+  let sendRedirect = false;
+  let receiveRedirect =false;
+  
   return (
     <>
       <div className="homepage">
@@ -18,6 +21,7 @@ export default function Homepage() {
         <button className="btn" id="btn2">
           Receive
         </button>
+        <img className="background" src="./asset/home1.jpeg" alt='Home background'/>
       </div>
     </>
   );
