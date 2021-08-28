@@ -3,9 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .homepage {
   margin-left: 10vw;
-  margin-top: 20vh;
+  margin-top: 13vh;
   height: fit-content;
   width: fit-content;
 }
@@ -51,6 +52,7 @@
 }
 .btn:hover {
   background-color: rgb(0, 70, 120);
+  color: white;
 }
 .background {
   display: inline;
@@ -64,13 +66,16 @@
 
 @media screen and (max-width: 768px) {
   .homepage {
-    margin-left: 1vw;
-    margin-top: 20vh;
+    margin-left: 4vw;
+    margin-top: 10vh;
   }
   .homepage p {
     margin-top: 8vh;
   }
   .background {
     top: 8vh;
+  }
+  .btn {
+    margin-left: 25vw;
   }
 }
