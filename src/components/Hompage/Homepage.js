@@ -1,8 +1,11 @@
 import "./Homepage.css";
-
+import NavBar from "../Navbar/Navbar";
 export default function Homepage() {
   return (
     <>
+      <div className="navbar">
+      <NavBar></NavBar>
+      </div>
       <div className="homepage">
         <h1>Safe Share</h1>
         <p>
@@ -19,6 +22,7 @@ export default function Homepage() {
           Receive
         </button>
       </div>
+      <img src="./asset/home1.jpeg" className="background" alt="Home Background"></img>
     </>
   );
 }
