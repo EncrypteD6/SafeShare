@@ -33,22 +33,15 @@
   border: none;
   color: white;
   height: 3rem;
-  /* padding: 20px; */
   text-align: center;
   font-weight: bold;
   font-size: 2vh;
   border-radius: 10%;
-  margin-left: 10vw;
-  margin-top: 8vh;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-#btn1 {
-  padding-left: 5vh;
+  margin-left: 5vw;
+  margin-top: 10vh;
+  padding-left: 7vh;
   padding-right: 5vh;
-}
-#btn2 {
-  padding-left: 4vh;
-  padding-right: 4vh;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .btn:hover {
   background-color: rgb(0, 70, 120);
@@ -62,9 +55,6 @@
   right: 10vw;
   height: 30vh;
   width: 30vw;
-}
-.navbar {
-  padding-top: 0;
 }
 @media screen and (max-width: 768px) {
   .homepage {
