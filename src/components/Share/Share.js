@@ -3,10 +3,16 @@ import Navbar from '../Navbar/Navbar'
 
 const Share = () => {
     return (
-        <div>
+        <>
             <Navbar></Navbar>
-            <h3>SHARE PAGE</h3>
-        </div>
+            <div className="homepage">    
+            <h1>Share Page</h1>
+            <p>Select the files </p>
+            <input type="file"/>
+            <button className="btn">Upload</button>
+            </div>
+            <img src="./asset/upload.png" className="background" alt="Upload image"></img>
+        </>
     )
 }
 
