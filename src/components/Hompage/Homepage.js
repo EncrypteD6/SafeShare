@@ -4,7 +4,7 @@ export default function Homepage() {
   return (
     <>
       <div className="navbar">
-      <NavBar></NavBar>
+        <NavBar />
       </div>
       <div className="homepage">
         <h1>Safe Share</h1>
@@ -22,7 +22,11 @@ export default function Homepage() {
           Receive
         </button>
       </div>
-      <img src="./asset/home1.jpeg" className="background" alt="Home Background"></img>
+      <img
+        src="./asset/home1.jpeg"
+        className="background"
+        alt="Home Background"
+      ></img>
     </>
   );
 }
