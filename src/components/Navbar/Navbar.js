@@ -1,23 +1,18 @@
 import './Navbar.css'
-import React from 'react';
-import {
-  Navbar,
-  Nav,
-  NavItem,
-} from 'reactstrap';
-
+import {Navbar, Nav,NavItem,} from 'reactstrap';
+import {Link} from 'react-router-dom';
 const NavBar = () => {
   return (
       <div className="Navbar">
          <Navbar light expand="md" > 
-         <a to=""><img src="./asset/logo.jpg" className="Logo" width="60px" alt="logo of website"/></a>
+         <Link to="/"><img src="./asset/logo.jpg" className="Logo" width="60px" alt="logo of website"/></Link>
             <Nav className="links" navbar >
               <NavItem className="Navitem">
-                <a to=""><p className="send">Share</p></a>
+                <Link to="/Share" style={{textDecoration:'none'}}><p className="send">Share</p></Link>
               </NavItem>
               <span />
               <NavItem className="Navitem">
-              <a to=""><p className="send">Receive</p></a>
+              <Link to="/Receive" style={{textDecoration:'none'}}><p className="send">Receive</p></Link>
               </NavItem>
             </Nav>
         </Navbar>

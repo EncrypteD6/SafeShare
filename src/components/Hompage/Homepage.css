@@ -63,7 +63,9 @@
   height: 30vh;
   width: 30vw;
 }
-
+.navbar {
+  padding-top: 0;
+}
 @media screen and (max-width: 768px) {
   .homepage {
     margin-left: 4vw;
