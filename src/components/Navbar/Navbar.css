@@ -3,21 +3,19 @@
 }
 .Logo {
   border-radius: 50%;
-  background-color: whitesmoke;
   margin-left: 2vh;
 }
 .Navitem {
   padding: 1vh;
-  padding-top: 0;
 }
 .send {
-  text-decoration: none;
   font-weight: bold;
   font-size: 3vh;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: rgb(50, 166, 255);
-  margin: 2vh;
+  margin: 20px;
+  text-decoration: none;
 }
 @media screen and (max-width: 768px) {
   .send {
