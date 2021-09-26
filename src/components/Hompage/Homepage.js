@@ -1,11 +1,13 @@
 import "./Homepage.css";
+import NavBar from "../Navbar/Navbar";
+import {Link} from "react-router-dom";
 
 export default function Homepage() {
-  let sendRedirect = false;
-  let receiveRedirect =false;
-  
   return (
     <>
+      <div className="navbar">
+        <NavBar />
+      </div>
       <div className="homepage">
         <h1>Safe Share</h1>
         <p>
@@ -13,16 +15,20 @@ export default function Homepage() {
           <br />A convinient way to share files
           <br />
           in seconds.
-        </p>
+        </p><Link to="/Share">
         <button className="btn" id="btn1">
           Share
-        </button>
-        <br />
+        </button></Link>
+        <br /><Link to='/Receive'>
         <button className="btn" id="btn2">
           Receive
-        </button>
-        <img className="background" src="./asset/home1.jpeg" alt='Home background'/>
+        </button></Link>
       </div>
+      <img
+        src="./asset/home1.jpeg"
+        className="background"
+        alt="Home Background"
+      ></img>
     </>
   );
 }
