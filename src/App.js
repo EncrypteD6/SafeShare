@@ -2,6 +2,7 @@ import Homepage from "./components/Hompage/Homepage";
 import Share from "./components/Share/Share";
 import Receive from "./components/Receive/Receive";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+
 function App() {
   return (
     <Router>
