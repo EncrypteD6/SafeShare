@@ -1,9 +1,8 @@
-import NavBar from "../Navbar/Navbar";
 import "./Result.css";
 
 const Result = (props) => {
   const QRCode = require("qrcode.react");
-  
+
   const copy = () => {
     let url = document.getElementById("copy").value;
     navigator.clipboard.writeText(url);
@@ -17,7 +16,6 @@ const Result = (props) => {
 
   return (
     <>
-      <NavBar />
       <div>
         <div className="qr">
           <QRCode value={props.url} />

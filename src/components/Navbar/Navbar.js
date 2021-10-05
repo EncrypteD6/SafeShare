@@ -7,7 +7,7 @@ const NavBar = () => {
       <Navbar light expand="md">
         <Link to="/">
           <img
-            src="./asset/logo.jpg"
+            src="./asset/logo.png"
             className="Logo"
             width="60px"
             alt="logo of website"
