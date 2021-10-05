@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../Navbar/Navbar";
 import { useState } from "react";
 import { storage } from "../../firebase_config/firebase_config";
 import { ref, uploadBytesResumable } from "@firebase/storage";
@@ -169,7 +168,6 @@ const Share = () => {
   }
   return (
     <>
-      <Navbar />
       <div className="homepage">
         <h1>Share Page</h1>
         <p>Select the files </p>

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Navbar from "../Navbar/Navbar";
 import { storage } from "../../firebase_config/firebase_config";
 import { getDownloadURL, listAll, ref } from "@firebase/storage";
 
@@ -75,7 +74,6 @@ const Receive = () => {
 
   return (
     <>
-      <Navbar></Navbar>
       <div className="homepage">
         <h1>Receive Page</h1>
         <p>Select the files </p>
