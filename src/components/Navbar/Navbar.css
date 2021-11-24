@@ -16,6 +16,12 @@
   color: rgb(50, 166, 255);
   margin: 20px;
   text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 0.8rem;
+}
+.send:hover {
+  background-color: rgb(50, 166, 255, 0.8);
+  color: white;
 }
 @media screen and (max-width: 768px) {
   .send {

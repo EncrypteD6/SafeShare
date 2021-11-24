@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { storage } from "../../firebase_config/firebase_config";
 import { getDownloadURL, listAll, ref } from "@firebase/storage";
+import LogOut from "../LogOut/LogOut";
 
-const Receive = () => {
+const Receive = (props) => {
   let files = [];
   const [urlArray, setUrlArray] = useState([]);
 
@@ -74,28 +75,34 @@ const Receive = () => {
 
   return (
     <>
-      <div className="homepage">
-        <h1>Receive Page</h1>
-        <p>Select the files </p>
-        <input type="text" placeholder="Key" id="ip" />
-        <button className="btn" onClick={checkFiles}>
-          Download
-        </button>
-        <ul>
-          {urlArray.map((url) => {
-            let res = url.split("?");
-            let res1 = res[0].split("%2F");
-            return (
-              <li>
-                <a rel="noreferrer" href={url} target="_blank" download>
-                  {res1[1]}
-                </a>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-      <div id="alertRecieve"></div>
+      {props.user ? (
+        <>
+          <div className="homepage">
+            <h1>Receive Page</h1>
+            <p>Select the files </p>
+            <input type="text" placeholder="Key" id="ip" />
+            <button className="btn" onClick={checkFiles}>
+              Download
+            </button>
+            <ul>
+              {urlArray.map((url) => {
+                let res = url.split("?");
+                let res1 = res[0].split("%2F");
+                return (
+                  <li>
+                    <a rel="noreferrer" href={url} target="_blank" download>
+                      {res1[1]}
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <div id="alertRecieve"></div>
+        </>
+      ) : (
+        <LogOut />
+      )}
     </>
   );
 };
