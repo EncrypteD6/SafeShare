@@ -3,8 +3,9 @@ import { useState } from "react";
 import { storage } from "../../firebase_config/firebase_config";
 import { ref, uploadBytesResumable } from "@firebase/storage";
 import Result from "../Result/Result";
+import LogOut from "../LogOut/LogOut";
 
-const Share = () => {
+const Share = (props) => {
   const [progress, setProgress] = useState(0);
   const [FILE, setFILE] = useState([]);
   const [SIZE, setSIZE] = useState(5e6);
@@ -168,36 +169,42 @@ const Share = () => {
   }
   return (
     <>
-      <div className="homepage">
-        <h1>Share Page</h1>
-        <p>Select the files </p>
-        <img
-          src="./asset/download.png"
-          width="100px"
-          alt="Symbol of addition"
-          onClick={filepick}
-        />
+      {props.user ? (
+        <>
+          <div className="homepage">
+            <h1>Share Page</h1>
+            <p>Select the files </p>
+            <img
+              src="./asset/download.png"
+              width="100px"
+              alt="Symbol of addition"
+              onClick={filepick}
+            />
 
-        <button className="btn" onClick={upload}>
-          Upload
-        </button>
-        <progress id="statusIndicatorSend" value={progress} max="100" />
-      </div>
-      <div>
-        <h5>Add more files</h5>
+            <button className="btn" onClick={upload}>
+              Upload
+            </button>
+            <progress id="statusIndicatorSend" value={progress} max="100" />
+          </div>
+          <div>
+            <h5>Add more files</h5>
 
-        <p style={{ borderBottom: "1px solid grey", marginBottom: "0" }}>
-          {FILE.length} files added
-        </p>
-        <p style={{ fontSize: "12px" }}>click to remove files</p>
-        <ul
-          id="filedisplaylist"
-          style={{ marginTop: "20px" }}
-          onClick={removeFile}
-        ></ul>
-      </div>
+            <p style={{ borderBottom: "1px solid grey", marginBottom: "0" }}>
+              {FILE.length} files added
+            </p>
+            <p style={{ fontSize: "12px" }}>click to remove files</p>
+            <ul
+              id="filedisplaylist"
+              style={{ marginTop: "20px" }}
+              onClick={removeFile}
+            ></ul>
+          </div>
 
-      <div id="alert"></div>
+          <div id="alert"></div>
+        </>
+      ) : (
+        <LogOut />
+      )}
     </>
   );
 };
