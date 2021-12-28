@@ -99,6 +99,11 @@ const Receive = (props) => {
             </ul>
           </div>
           <div id="alertRecieve"></div>
+          <img
+            src="./asset/download.png"
+            className="background"
+            alt="Home Background"
+          ></img>
         </>
       ) : (
         <LogOut />

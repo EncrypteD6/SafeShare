@@ -4,3 +4,27 @@
   padding: 5rem;
   height: 100%;
 }
+
+.submi {
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5em;
+  color: #fff;
+  background: linear-gradient(to right, rgb(50, 66, 255), rgb(50, 166, 255));
+  border: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-family: "Ubuntu", sans-serif;
+  margin-left: 0%;
+  font-size: 13px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
+.heading {
+  font-size: 6vh;
+  font-family: "Pushster";
+  /* box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04); */
+  text-shadow: 5rem;
+  color: rgb(50, 166, 255);
+}

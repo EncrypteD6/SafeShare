@@ -1,3 +1,5 @@
+import "./form.css";
+
 const MobileForm = (props) => {
   if (props.err) {
     document.getElementById("alert").style.display = "block";
@@ -10,11 +12,21 @@ const MobileForm = (props) => {
   return (
     <div className="form-wrapper">
       <form id="loginForm" onSubmit={props.loginSubmit}>
-        <div className="input-field">
-          <label>Phone Number</label>
-          <input type="text" placeholder="Phone" name="phone" />
+        <div>
+          <input
+            align="center"
+            className="un"
+            type="text"
+            placeholder="Phone Number"
+            name="phone"
+          />
         </div>
-        <button className="main-button" type="submit" id="sign-in-button">
+        <button
+          align="center"
+          className="submit"
+          type="submit"
+          id="sign-in-button"
+        >
           Sign in
         </button>
       </form>
