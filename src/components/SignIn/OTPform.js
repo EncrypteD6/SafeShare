@@ -9,11 +9,16 @@ const OTPform = (props) => {
   return (
     <div className="form-wrapper" onSubmit={props.otpSubmit}>
       <form id="otpForm">
-        <div className="input-field">
-          <label>Enter OTP</label>
-          <input type="text" placeholder="One time password" name="otp_value" />
+        <div>
+          <input
+            className="un"
+            align="center"
+            type="text"
+            placeholder="Enter OTP"
+            name="otp_value"
+          />
         </div>
-        <button className="main-button" type="submit">
+        <button className="submit" type="submit">
           Verify OTP
         </button>
       </form>

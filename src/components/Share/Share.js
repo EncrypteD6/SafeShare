@@ -175,7 +175,7 @@ const Share = (props) => {
             <h1>Share Page</h1>
             <p>Select the files </p>
             <img
-              src="./asset/download.png"
+              src="./asset/upload.png"
               width="100px"
               alt="Symbol of addition"
               onClick={filepick}
@@ -201,6 +201,11 @@ const Share = (props) => {
           </div>
 
           <div id="alert"></div>
+          <img
+            src="./asset/home2.png"
+            className="background"
+            alt="Home Background"
+          ></img>
         </>
       ) : (
         <LogOut />

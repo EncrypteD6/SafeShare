@@ -16,20 +16,18 @@ const Result = (props) => {
 
   return (
     <>
-      <div>
+      <div className="result-content">
         <div className="qr">
-          <QRCode value={props.url} />
+          <QRCode value={props.url} size="200" />
         </div>
         <input type="text" readOnly={true} id="copy" value={props.url} />
-        <p style={{ width: "80%", textAlign: "center", marginTop: "20px" }}>
-          <u>Note</u>: Directly enter the code in the downloads section to
-          Download Your Files
+        <p>
+          <b>
+            <u>Note</u>: Directly enter the code in the downloads section to
+            Download Your Files
+          </b>
         </p>
-        <button
-          onClick={copy}
-          className="CopyButton"
-          style={{ outline: "none" }}
-        >
+        <button className="copy" onClick={copy} style={{ outline: "none" }}>
           Copy
         </button>
         <div color="success" id="alertResult"></div>

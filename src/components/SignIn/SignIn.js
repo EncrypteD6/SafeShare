@@ -1,4 +1,5 @@
 import React from "react";
+import "./SignIn.css";
 import MobileForm from "./MobileForm";
 import OTPform from "./OTPform";
 
@@ -12,9 +13,9 @@ const SignIn = ({ loginSubmit, otpSubmit, viewOtpForm, err }) => {
   }
 
   return (
-    <div className="wrapper">
-      <h1 className="main-heading">Sign in</h1>
-      <p className="sub-text">Sign in using your mobile number.</p>
+    <div className="main">
+      <h1 className="sign" align="center">Sign in</h1>
+      <p align="center">Sign in using your mobile number.</p>
       {!viewOtpForm ? (
         <MobileForm loginSubmit={loginSubmit} err={err} />
       ) : (

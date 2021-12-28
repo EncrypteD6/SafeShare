@@ -27,6 +27,11 @@ export default function Homepage(props) {
               </button>
             </Link>
           </div>
+          <img
+            src="./asset/home1.jpeg"
+            className="background"
+            alt="Home Background"
+          ></img>
         </>
       ) : (
         <LogOut />
