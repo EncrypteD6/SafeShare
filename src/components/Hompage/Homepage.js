@@ -11,7 +11,7 @@ export default function Homepage(props) {
             <h1>Safe Share</h1>
             <p>
               Introducing the file sharing platform.
-              <br />A convinient way to share files
+              <br />A convenient way to share files
               <br />
               in seconds.
             </p>
